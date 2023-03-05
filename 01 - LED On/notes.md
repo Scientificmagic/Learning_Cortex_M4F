@@ -26,7 +26,7 @@ The hardware block is switched off by default to save power and needs to be manu
 This process of blocking the clock signal is called "clock-gating"
 
 ## Enable clock gating control
-Searching for "clock gating" in the datasheet, you will go to Page 340, Title "General-Purpose Input/Output Run Mode Clock Gating Control (RCGCGPIO)".
+Searching for "clock gating" in the datasheet, you will go to Page 340, Title "General-Purpose Input/Output Run Mode Clock Gating Control (`RCGCGPIO`)".
 If we focus on the description for bit 5, we will discover that setting its value to 1 will enable GPIO Port F.
 
 - We will need the base address `0x400F.E000` and the offset `0x608` to get the complete register address.

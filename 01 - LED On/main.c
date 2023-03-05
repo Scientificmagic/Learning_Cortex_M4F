@@ -7,9 +7,6 @@ int main() {
     *((unsigned int *)0x4002551CU) = 0x0EU;
     
     // finally set the LED bits
-    // 0x02U = Red
-    // 0x04U = Blue
-    // 0x08U = Green
-    *((unsigned int *)0x400253FC) = 0x08U;
+    *((unsigned int *)0x400253FCU) = 0x08U;
     return 0;
 }
